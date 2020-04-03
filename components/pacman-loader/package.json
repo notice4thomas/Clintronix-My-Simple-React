@@ -1,0 +1,21 @@
+{
+  "name": "@bit/davidhu2000.react-spinners.pacman-loader",
+  "version": "0.5.1",
+  "homepage": "https://bit.dev/davidhu2000/react-spinners/pacman-loader",
+  "main": "dist/PacmanLoader.jsx",
+  "dependencies": {
+    "prop-types": "^15.5.10",
+    "@emotion/core": "^10.0.4",
+    "recompose": "0.27.1 - 0.30.0"
+  },
+  "devDependencies": {},
+  "peerDependencies": {
+    "react": "^16.0.0"
+  },
+  "license": "SEE LICENSE IN LICENSE",
+  "bit": {
+    "env": {
+      "compiler": "bit.envs/compilers/react@0.0.14"
+    }
+  }
+}

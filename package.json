@@ -3,12 +3,28 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@bit/bit.base.atoms.image": "file:./components/atoms/image",
+    "@bit/davidhu2000.react-spinners.pacman-loader": "file:components/pacman-loader",
+    "@bit/jakeprins.react-milkshake.card": "file:./components/card",
+    "@bit/jakeprins.react-milkshake.grid": "file:./components/grid",
+    "@bit/mui-org.material-ui.button": "file:./components/button",
+    "@bit/plaborderie.react.ui.header": "file:./components/ui/header",
+    "@bit/react-bootstrap.react-bootstrap.theme-provider": "file:./components/theme-provider",
+    "@material-ui/core": "^4.9.8",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
     "@testing-library/user-event": "^7.2.1",
+    "bootstrap": "^4.4.1",
+    "material-ui": "^0.20.2",
+    "node-sass": "^4.13.1",
     "react": "^16.13.1",
+    "react-bootstrap": "^1.0.0",
     "react-dom": "^16.13.1",
-    "react-scripts": "3.4.1"
+    "react-redux": "^7.2.0",
+    "react-scripts": "3.4.1",
+    "redux": "^4.0.5",
+    "styled-components": "^5.0.1",
+    "theme-provider": "^1.0.8"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -30,5 +46,12 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "bit": {
+    "env": {
+      "compiler": "bit.envs/compilers/react@1.0.16"
+    },
+    "componentsDefaultDirectory": "components/{name}",
+    "packageManager": "npm"
   }
 }

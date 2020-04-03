@@ -2,13 +2,20 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 
+import PacmanLoader from '@bit/davidhu2000.react-spinners.pacman-loader';
+
 function App() {
+
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+      <PacmanLoader
+      size='60'
+    color='rgb(108, 116, 138)'
+    css={{width:"260px !important", height:"130px !important"}}
+    />
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          My simple App
         </p>
         <a
           className="App-link"
@@ -16,7 +23,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+          Clintronix
         </a>
       </header>
     </div>

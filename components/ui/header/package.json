@@ -1,0 +1,18 @@
+{
+  "name": "@bit/plaborderie.react.ui.header",
+  "version": "0.0.11",
+  "homepage": "https://bit.dev/plaborderie/react/ui/header",
+  "main": "dist/index.js",
+  "dependencies": {
+    "prop-types": "^15.6.2",
+    "react": "^16.7.0"
+  },
+  "devDependencies": {},
+  "peerDependencies": {},
+  "license": "SEE LICENSE IN LICENSE",
+  "bit": {
+    "env": {
+      "compiler": "bit.envs/compilers/react@0.0.14"
+    }
+  }
+}
