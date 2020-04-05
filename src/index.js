@@ -12,28 +12,36 @@ import Footer from './Footer';
 
 
 class Page extends React.Component {
+  //creates state for btn
   constructor() {
     super();
-    
     this.state = {
       showMenu: false,
     }
     
     this.showMenu = this.showMenu.bind(this);
   }
-  
+  //handles event and sets state 
   showMenu(event) {
     event.preventDefault();
+    if (this.state.showMenu === false) {
+      this.setState({
+        showMenu: true,
+      });
+    } else {
+      this.setState({
+        showMenu: false,
+      });
+    }
+      
     
-    this.setState({
-      showMenu: true,
-    });
+    
   }
 render () {
 
   return (
   
-  <React.StrictMode>
+  <>
 
     <App />
       
@@ -47,8 +55,7 @@ render () {
   showMenu={this.state.showMenu}
   onClick={this.showMenu}
  />
-
-<Project></Project>
+ <body><Project></Project>
 <Grid>
   <p>
     Hello paragraph
@@ -75,9 +82,9 @@ render () {
     Hello paragraph
   </p>
 </Grid>
-<Button>Hello I am button</Button>
+<Button>Hello I am button</Button></body>
 <Footer></Footer>
-  </React.StrictMode>
+  </>
   );
 }
 }

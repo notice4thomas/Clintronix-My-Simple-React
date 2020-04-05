@@ -24,7 +24,7 @@ const Header = ({ title, links, showMenu, onClick, renderLink, styles }) => (
       <h3>{title}</h3>
       <a
         className={`pl-nav-button ${showMenu ? "active" : ""}`}
-        onClick={onClick}
+        onClick={showMenu = {onClick}}
       />
     </header>
     <div className={`pl-menu ${showMenu ? "open" : ""}`}>

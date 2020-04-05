@@ -1,6 +1,7 @@
 import React from 'react';
 import Grid from '@bit/jakeprins.react-milkshake.grid';
 import styled from 'styled-components'
+import Input from './input.js';
 
 const H2 = styled.h1`
   font-size: 1.5em;
@@ -20,7 +21,9 @@ class Footer extends React.Component {
             
             <FooterArea>
                <H2>Clintronix</H2>
+               <Input></Input>
             </FooterArea>
+          
             
         );
     }
